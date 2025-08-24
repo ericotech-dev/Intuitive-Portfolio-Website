@@ -26,15 +26,16 @@ export const Navbar = () => {
             isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
         )}>
 
-         <div className="container max-w-8xl mx-auto flex items-center justify-between">
+         <div className="container flex items-center justify-between">
             <a className="text-xl font-bold text-primary flex items-center"href="#hero">
                 <span  className="relative z-10 ">
                     <span className="text-glow text-foreground">EricoTech
-                </span> {" "} Portolio
+                </span> {" "} 
+                Portolio
                 </span>
             </a>
             {/* desktop nav */}
-            <div className="hidden md:flex space-x-8 ">
+            <div className="hidden md:flex space-x-8 px-8">
                 {navItems.map((item, key) => (
                        <a key={key} href={item.href} className="hover:text-primary transition-colors duration-300 " >
                         {item.name}
